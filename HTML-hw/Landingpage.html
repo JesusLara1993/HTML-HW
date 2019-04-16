@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">plots<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/Users/mary/Desktop/HTML-hw/images/latvstemp.png" target= "blank">Latitude vs. Max Temperature</a></li>
+              <li><a href="/Users/mary/Desktop/HTML-hw/images/Latvshum.png" target= "blank">Latitude vs. Humidity</a></li>
+              <li><a href="/Users/mary/Desktop/HTML-hw/images/latvscloudiness.png" target= "blank">Latitude vs. Cloudiness</a></li>
+              <li><a href="/Users/mary/Desktop/HTML-hw/images/Latvswindspeed.png" target= "blank">Latitude vs. Wind Speed</a></li>
+              <li role="separator" class="divider"></li>
+
+            </ul>
+          </li>
+          <li><a href="/Users/mary/Desktop/HTML-hw/comparison.html">Comparison</a></li>
+          <li><a href="/Users/mary/Desktop/HTML-hw/cities.html" target= "blank">Data</a></li>
+          <li><a href="/Users/mary/Desktop/HTML-hw/cloud.html" target= "blank">Findings</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6 pad top"> <br>
+          <h3>Summary: Latitude vs. X</h3> <br>
+        </div>
+
+        <div class="col-md-6 pad top"> <br>
+
+        </div>
+
+      </div>
+
+    <div class="row">
+
+        <div class="col-md-6 pad top"> <br>
+
+          <div class="pull-left">
+            <img src="/Users/mary/Desktop/HTML-hw/images/latvstemp.png" alt="Latitude vs. Max Temperature" width="200" height="175">
+          </div>
+
+          <div class="text-left">
+            <p> We first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities. </p> <br>
+            <p>Once the dataset was assembled, Matplotlib was used to plot various aspects of weather
+                vs. latitude. Factors analyzed included: temperature, cloudiness, wind-speed and humidity. </p> <br>
+            <p> Moreover, Matplotlib was used in order to generate plots aspects of the weather based on latitude. The goal was to visualize a world map using weather plots. This site
+                provides the source data and visualizations created as part of the analysis,
+                as well as explanations and descriptions of any trends and correlations witnessed. </p>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 pad top"> <br>
+
+          <div class="pull-right">
+            <a href="lat_temps.html"><img src="/Users/mary/Desktop/HTML-hw/images/latvstemp.png" alt="Latitude vs. Max Temperature" width="100%" height="100%"></a>
+            <h4><p></p>
+            <a href="lat_wind.html"><img src="/Users/mary/Desktop/HTML-hw/images/Latvswindspeed.png" alt="Latitude vs. Wind Speed" width="100%" height="100%"></a>
+          </div>
+
+       </div>
+
+       <div class="col-md-3 pad top"> <br>
+
+        <div class="pull-right">
+          <a href="lat_hum.html"><img src="/Users/mary/Desktop/HTML-hw/images/Latvshum.png" alt="Latitude vs. Humidity" width="100%" height="100%"></a>
+          <h4><p></p>
+          <a href="lat_cloud.html"><img src="/Users/mary/Desktop/HTML-hw/images/latvscloudiness.png" alt="Latitude vs. Cloudiness" width="100%" height="100%"></a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6 pad top"> <br>
+
+      </div>
+
+      <div class="col-md-3 pad top"> <br>
+
+
+      </div>
+
+
+
+      </div>
+
+  </div>
+
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </html>
